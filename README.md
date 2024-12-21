@@ -1,14 +1,16 @@
 CODTECH IT (Simple Calculator)
 
-Name : RAJESH M 
+NAME : RAJESH M 
 
-Company : CodTech IT Solutions 
+COMPANY : CodTech IT Solutions 
 
 ID : CT08DS108
 
-Domain : PYTHON PROGRAMMING
+DOMAIN : PYTHON PROGRAMMING
 
-Duration : November 2024 - December 2024 
+DURATION : November 2024 - December 2024 
+
+
 
 Overview of the Project : 
 
