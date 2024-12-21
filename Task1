@@ -1,0 +1,54 @@
+/*SIMPLE CALCULATOR*/
+
+
+def calculator():
+    print("Simple Calculator")
+    print("Operations:")
+    print("1. Add (+)")
+    print("2. Subtract (-)")
+    print("3. Multiply (*)")
+    print("4. Divide (/)")
+    
+    while True:
+        try:
+            # Get user input
+            num1 = float(input("\nEnter first number: "))
+            num2 = float(input("Enter second number: "))
+            operation = input("Enter operation symbol (+, -, *, /): ")
+            
+            # Perform calculation based on operation
+            if operation == '+':
+                result = num1 + num2
+                print(f"\n{num1} + {num2} = {result}")
+            
+            elif operation == '-':
+                result = num1 - num2
+                print(f"\n{num1} - {num2} = {result}")
+            
+            elif operation == '*':
+                result = num1 * num2
+                print(f"\n{num1} * {num2} = {result}")
+            
+            elif operation == '/':
+                if num2 == 0:
+                    print("\nError: Cannot divide by zero!")
+                    continue
+                result = num1 / num2
+                print(f"\n{num1} / {num2} = {result}")
+            
+            else:
+                print("\nInvalid operation! Please use +, -, *, or /")
+                continue
+            
+            # Ask if user wants to perform another calculation
+            again = input("\nDo you want to perform another calculation? (yes/no): ")
+            if again.lower() != 'yes':
+                print("\nThank you for using the calculator!")
+                break
+                
+        except ValueError:
+            print("\nError: Please enter valid numbers!")
+            continue
+
+if __name__ == "__main__":
+    calculator()
